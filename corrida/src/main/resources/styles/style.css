@@ -1,0 +1,51 @@
+/* Fundo principal da aplicação (O VBox raiz) */
+.root {
+    -fx-background-color: #2b2b36;
+    -fx-padding: 20px;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Estilo global dos textos e do pódio */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0.5, 1, 1);
+}
+
+/* O contêiner da pista */
+#pista {
+    -fx-border-color: #e5b022; /* Borda dourada/amarela combinando com corrida */
+    -fx-border-width: 4px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #1a1a24;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 20, 0, 0, 10);
+    -fx-padding: 0;
+}
+
+/* O Botão de Iniciar */
+#botao {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 40px;
+    -fx-background-color: linear-gradient(to bottom, #00d2ff, #3a7bd5); /* Degradê azul moderno */
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 4);
+}
+
+/* Efeito ao passar o mouse em cima do botão */
+#botao:hover {
+    -fx-background-color: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 12, 0, 0, 6);
+}
+
+/* Efeito de clique (afunda o botão) */
+#botao:pressed {
+    -fx-background-color: #2b5c9e;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+    -fx-translate-y: 2px;
+}
